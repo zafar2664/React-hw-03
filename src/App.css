@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Raleway, sans-serif;
+    background-color: rgb(252, 248, 248);
+}
+.wrapper{
+    overflow-x: hidden;
+}
+.header{
+    padding: 1rem 4rem;
+    background-color: rgb(213, 234, 241);
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+.title-heading{
+
+    padding: 1.5rem 0.8rem;
+    width: 60%;
+    margin: 0px auto;
+    margin-bottom: 0.5rem;
+}
+.title-heading h2{
+    font-size: 32px;
+    margin-bottom: 0.6rem;
+    color: rgb(83, 25, 136);
+}
+.title-heading p{
+    text-transform: uppercase;
+}
+nav{
+    background-color: rgb(158, 157, 157);
+    padding: 0.8rem 0.4rem;
+    width: 60%;
+    margin: 0px auto;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+
+}
+ul li{
+    text-transform: uppercase;
+    padding: 0px 8px;
+    margin: 0px 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+ul li:hover{
+    color: blueviolet;
+    font-weight: 500;
+}
+
+.body-container{
+  padding: 0.8rem 0rem;
+}
+
+.body-img{
+  width: 55%;
+  margin: 0px auto;
+}
+.body-img img{
+    width: 100%;
+}
+.body-info{
+    padding: 1.5rem 1rem;
+    background-color: rgb(100, 13, 13);
+    width: 55%;
+    margin: 8px auto;
+    text-align: center;
+    color: rgb(210, 212, 214);
+    font-family: Reddit Mono , sans-serif;
+}
+.body-info h3{
+    font-size: 26px;
+    margin-bottom: 0.8rem;
+}
+.body-info p{
+    margin-bottom: 0.8rem;
+    font-size: 18px;
+}
+.body-info button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin: 8px 12px;
+    border: 1px solid rgb(226, 43, 43);
+    outline: none;
+    border-radius: 3px;
+    background-color: rgb(247, 63, 63);
+    color: aliceblue;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.body-info button:hover{
+    background-color: #fff;
+    color: black;
+}
+ .body-content{
+    padding: 1.5rem 1rem;
+    /* background-color: rgb(100, 13, 13); */
+    width: 55%;
+    margin: 8px auto;
+  
+    color: rgb(51, 52, 53);
+ }
+ .body-content p{
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+ }
+ .body-content p:first-of-type{
+    color: rgb(162, 101, 219);
+ }
+ hr{
+    margin-top: 3rem;
+ }
+ .body-bottom{
+    width: 55%;
+    text-align: center;
+    margin: 1rem auto;
+    font-family: Outfit , sans-serif;
+ }
+ .body-bottom h3{
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: rgb(83, 25, 136);
+
+ }
+ .body-bottom p{
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+ }
+
+ footer{
+    width: 55%;
+     margin: auto;
+     padding: 1rem 0rem;
+    text-align: center;
+
+    font-family: Outfit , sans-serif;
+ }
+ .copy-right{
+  background-color: lightpink;
+  padding: 1rem ;
+  margin-bottom: 0.5rem;
+ }
+
+
+ @media screen and (max-width:1000px) {
+    .body-info p{
+        font-size: 15px;
+    }
+ }
+ @media screen and (max-width:860px) {
+    nav , .title-heading {
+        width: 70%;
+    }
+    .body-img , .body-content , .body-info , .body-bottom , footer{
+        width: 65%;
+    }
+ }
+ @media screen and (max-width:750px) {
+    .header {
+        padding: 1rem 2rem;
+    }
+    nav , .title-heading {
+        width: 85%;
+    }
+    .body-img , .body-content , .body-info , .body-bottom , footer{
+        width: 80%;
+    }
+ }
+ @media screen and (max-width:600px) {
+    .header {
+        padding: 1rem 1rem;
+    }
+    nav , .title-heading {
+        width: 100%;
+    }
+    .body-img , .body-content , .body-info , .body-bottom , footer{
+        width: 100%;
+    }
+ }
